@@ -68,6 +68,15 @@ header {
 			&:hover {
 				color: darken($Tiffany, 20%);
 			}
+			img {
+				border:1px solid $grey;
+				-webkit-border-radius: 20%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				height: 35px;
+				width: 35px;
+				vertical-align: bottom;
+			}
 		}
 	}
 }
