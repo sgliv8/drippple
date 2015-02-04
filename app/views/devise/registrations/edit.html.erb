@@ -4,6 +4,10 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <% if f.object.avatar? %>
+    Current Avatar <%= image_tag f.object.avatar.url(:thumb) %>
+    <% end %>
+    <%= f.input :avatar %>
     <%= f.input :first_name, required: true, autofocus: true %>
     <%= f.input :last_name, required: true %>
     <%= f.input :profile_name, required: true %> 
