@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 	outline: none;
 	background: white;
 	color: $grey;
+	&:hover {
+		color: darken( $Tiffany, 20%);
+		border: 1px solid darken( $Tiffany, 20%);
+	}
 }
 
 header {
@@ -50,7 +54,7 @@ header {
 			color: $Tiffany;
 			text-decoration: none;
 			&:hover {
-				color: darken( $Tiffany, 20%);
+				color: darken($Tiffany, 20%);
 			}
 		}
 	}
@@ -62,7 +66,7 @@ header {
 			color: $grey;
 			text-decoration: none;
 			&:hover {
-				color: $Tiffany;
+				color: darken($Tiffany, 20%);
 			}
 		}
 	}

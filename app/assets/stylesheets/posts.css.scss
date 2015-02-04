@@ -31,6 +31,9 @@ $Tiffany   : #7ad8cf;
 			text-decoration: none;
 			color: #969696;
 			margin: 0;
+			&:hover {
+				color: darken($Tiffany, 20%);
+			}
 		}
 	}
 	#random_post {
@@ -45,8 +48,9 @@ $Tiffany   : #7ad8cf;
 			background: #F8F9FA;
 			border: 1px solid #E4E4E4;
 			border-radius: 0.3rem;
+			margin-bottom: 2rem;
 			.post_image {
-				height: 200px;
+				height: 150px;
 				overflow: hidden;
 				img {
 					width: 100%;
@@ -64,7 +68,7 @@ $Tiffany   : #7ad8cf;
 						text-decoration: none;
 						color: #333233;
 						&:hover {
-							color: #50A7C7;
+							color: darken($Tiffany, 20%);;
 						}
 					}
 				}
