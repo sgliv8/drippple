@@ -1,0 +1,72 @@
+/*
+ *= require_self
+ */
+
+$Tiffany   : #7ad8cf;
+$grey      : #9B9B9B;
+$green     : #ecf9f8;
+
+body {
+ 	font-family: "Proxima Nova";
+ 	font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+.wrapper {
+ 	width: 85%;
+ 	margin: 0 auto;
+}
+
+
+.clearfix:before, .clearfix:after {
+ 	content: " ";
+ 	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.button {
+	border: 1px solid $grey;
+	padding: .7rem 1.25rem;
+	border-radius: .3rem;
+	outline: none;
+	background: white;
+	color: $grey;
+}
+
+header {
+	width: 100%;
+	padding: 2rem 0;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.23);
+	#logo {
+		float: left;
+		font-size: 1.75rem;
+		a {
+			color: $Tiffany;
+			text-decoration: none;
+			&:hover {
+				color: darken( $Tiffany, 20%);
+			}
+		}
+	}
+	nav {
+		float: right;
+		a {
+			margin-left: 1.5rem;
+			line-height: 2;
+			color: $grey;
+			text-decoration: none;
+			&:hover {
+				color: $Tiffany;
+			}
+		}
+	}
+}
+
+@import 'home.css.scss';
+@import 'posts.css.scss';
