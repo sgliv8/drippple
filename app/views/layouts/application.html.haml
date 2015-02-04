@@ -21,7 +21,7 @@
 					= link_to "Sign Up", new_user_registration_path, class: "button"
 	.wrapper
 		- flash.each do |name, msg|
-			= content_tag :div, msg, class: "alert alert-#{flash_class_type(name)}"
+			= content_tag :div, msg, class: "alert alert-#{flash_class_type(name)} flash"
 	
 	.wrapper
 		= yield

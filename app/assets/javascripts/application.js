@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+window.setTimeout(function() {
+  $(".flash").fadeTo(500, 0).slideUp(500, function(){
+      $(this).remove();
+  });
+}, 3500);
